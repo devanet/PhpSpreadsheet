@@ -54,6 +54,7 @@ abstract class IOFactory
         $className = self::$writers[$writerType];
         $writer = new $className($spreadsheet);
 
+        return null;/*PJO*/
         return $writer;
     }
 
